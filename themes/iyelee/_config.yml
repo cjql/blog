@@ -7,8 +7,9 @@ Yelee: "3.5"
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  时间轴: /archives
+  时间轴: /archives/
   标签云: /tags/
+  关于我: /hello
   # 留言板: /about/
   # 建站日志: /2015/08/20/blog-building
 
@@ -31,35 +32,36 @@ root_url:
 
 subnav:
   # Email: "mailto:&#0000109;&#0000111;&#x0000031;&#0048;&#x0000030;&#0048;&#000053;&#000064;&#00000111;&#0117;&#00116;&#x000006c;&#0111;&#111;&#00107;&#x002e;&#x00063;&#00000111;&#00109;"
-  新浪微博: //weibo.com/yemzh
+  # 新浪微博: //weibo.com/yemzh
   GitHub: //github.com/cjql
-  V2EX: //www.v2ex.com/member/
-  RSS: "/atom.xml"
+  # V2EX: //www.v2ex.com/member/
+  # RSS: "/atom.xml"
   # 知乎: "zhihu"
-  # 豆瓣: "douban"
+  豆瓣: "douban"
   # 简书: "jianshu"
   # SegmentFault: ""
   # 网易云音乐: "netease"
   # 虾米音乐: "xiami"
   # Facebook: "#"
   # Google: "#"
-  # Twitter: "//twitter.com/MOxFE"
+  Twitter: "//twitter.com/"
   # LinkedIn: "#"
-  # QQ: "#"
+  # QQ: ""
   # 微信: "Wechat"
   # PayPal: "#"
-  # StackOverflow: "#"
+  StackOverflow: "https://stackoverflow.com/"
   # Instagram: "#"
-  # Flickr: "#"
+  Flickr: "#"
   # reddit: ""
   # Medium: ""
   # TiddlyWiki: "/wiki/"
-  Tumblr: ""
-  _500px: ""
+  # Tumblr: ""
+  # _500px: ""
   博客园: "cnblogs"
   CSDN: ""
-  CodePen: ""
-  Plunker: ""
+  # CodePen: ""
+  # Plunker: ""
+  # quora: "https://www.quora.com"
 
 # >>> Conments 评论系统 <<<
 # Chose ONE as your comment system and keep others disable.
@@ -129,7 +131,7 @@ copyright: true
 toc:
   on: true
   list_number: true
-  max_depth: 3  # 1 - 6 (h1-h6)
+  max_depth: 6  # 1 - 6 (h1-h6)
   nowrap: true # Keep title on same line | 目录标题不换行
 
 # 自定义"阅读全文"链接按钮的显示文字
@@ -251,7 +253,7 @@ github_widget: 1
 progressBar:
   on: true
   type: "minimal"
-  color: blue
+  color: yellow #已经点击过的颜色
 
 CDN:
   jquery: //cdn.bootcss.com/jquery/2.2.4/jquery.min.js

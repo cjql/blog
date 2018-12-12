@@ -4,32 +4,57 @@ all_heading = "h1, h2, h3, h4, h5, h6"
 if !heading_style
     h1
         margin-top 30px
-    h2
-        margin .5em auto
-        color rgb(102, 190, 102)
-        padding-bottom 5px
-        border-bottom 1px solid #ddd
+        color #DC143C
         text-align center
-        font-size 1.5rem
         &:hover
             color #88acdb
         &::before, &::after
-            content " —— "
+            content " ❦ "
+            font-family Arial
+    h2
+        margin .5em auto
+        color  #F00FFF
+        // padding-bottom 5px
+        border-bottom 1px solid #ddd
+        // text-align center
+        font-size 1rem
+        &:hover
+            color #88acdb
+        &::before, &::after
+            content " ღ "
             font-family Arial
     h3
         margin .5em auto
-        color #438aac
+        color #9932CC
         background rgba(243,248,253,0.6)
         border 1px solid #d2e8fa
-        padding .2em .6em
+        // padding .2em .6em
         box-shadow: 1px 1px 1px rgba(0,0,0, .15)
         &:hover a
             text-decoration underline
-        &::after
-            content " >"
-    h4, h5, h6
+        &::before, &::after
+            content " ♣ "
+    h4
         margin-top 20px
-        color #574c4c
+        color   #0000FF
+        padding-bottom 5px
+        border-bottom 1px solid #ddd
+        background rgba(253,253,253,0.6)
+        border 1px solid #a2e8fa
+        box-shadow: 1px 1px 1px rgba(0,0,0, .15)
+        border-radius 35px
+        &::before, &::after
+            content " ꕤ "
+    h5
+        margin-top 20px
+        color #F00FFF
+        padding-bottom 5px
+        border-bottom 1px solid #ddd
+        &::before, &::after
+            content " ❀ "
+    h6
+        margin-top 20px
+        color #FFC0CB
         padding-bottom 5px
         border-bottom 1px solid #ddd
 
