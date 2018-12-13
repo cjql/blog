@@ -1,6 +1,6 @@
 ---
 title: achieve
-tags: [todo]
+tags: [todo,新加一个标签]
 ---
 思想的小巨人要脚踏实地呀。
 <!-- more -->

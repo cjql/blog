@@ -26,5 +26,6 @@ NLTK
 算法
 # 计划的小项目
 [新学网](http://www.newxue.com/chengyu/z/) 成语按意思查询 中高考各种相关知识
+http://e.jd.com/ 
 ## 后续阅读
 人月神话：代码规范
