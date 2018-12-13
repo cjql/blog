@@ -1,8 +1,23 @@
 ---
 title: hello
+tags: [后续学习]
 ---
 个人建站历程留影。邂逅了 MOxFIVE ，流连忘返不可收拾。一口气魔改到令自己还算满意。中间修复了 GitHub 的图标不能显示的 bug ，好不高兴。榜样在前，没有理由不好好学习。
 <!-- more -->
+#
+
+ISBN|Date|pages|price|author|title
+-|-|-|-|-|-
+9787533543341|2013-8-1|140|CNY 29.80|理想·宅|[创意家居客厅造价与材料注释系列](https://book.douban.com/subject/30197610/)
+9787533543372|2013-8-1|140|CNY 29.80|理想·宅|[创意家居客厅造价与材料注释系列](https://book.douban.com/subject/30197611/)
+9787533543358|2013-7-1|140|CNY 29.80|理想·宅|[创意家居客厅造价与材料注释系列](https://book.douban.com/subject/30197612/)
+9787533543365|2013-8-1|140|CNY 29.80|理想·宅|[创意家居客厅造价与材料注释系列](https://book.douban.com/subject/30197613/)
+9780521128414|||||[reading William Blake](https://book.douban.com/subject/30197614/)
+|||||[](https://book.douban.com/subject/30197615/)
+9787533543310|2013-9-1|140|CNY 23.00|王双忠|[运动健身丛书](https://book.douban.com/subject/30197616/)
+9787533552862|2017-8-1|30|CNY 32.00|哈皮童年|[中华传统经典故事绘本](https://book.douban.com/subject/30197617/)
+|||||[](https://book.douban.com/subject/30197618/)
+9781442496910|2014|||Jordan Quinn|[The Kindom of Wrenly 1](https://book.douban.com/subject/30197619/)
 
 # 参考资料
 主体|网址
@@ -16,6 +31,7 @@ moxfive|[建站日志](http://moxfive.xyz/2015/08/20/blog-building/) [个人网�
 ## 加油
 看配色方案：准备冷暖两套六级渐变色
 首页如何列表显示
+如何加入分类
 ## 思考
 如何为姐姐快速部署一个呢？
 >所需素材：六张背景图，一张图标，日志文件
@@ -28,6 +44,44 @@ git config和密钥
 ```
 npm install hexo-deployer-git --save
 npm install --save hexo-generator-search
+```
+```py
+import os
+from struct import unpack
+# 将通达信的日线文件转换成CSV格式
+def day2csv(source_dir, file_name, target_dir):
+    # 以二进制方式打开源文件
+    source_file = open(source_dir + os.sep + file_name, 'rb')
+    buf = source_file.read()
+    source_file.close()
+ 
+    # 打开目标文件，后缀名为CSV
+    target_file = open(target_dir + os.sep + file_name + '.csv', 'w')
+    buf_size = len(buf)
+    rec_count = buf_size / 32
+    begin = 0
+    end = 32
+    header = str('date') + ', ' + str('open') + ', ' + str('high') + ', ' + str('low') + ', ' \
+        + str('close') + ', ' + str('amount') + ', ' + str('vol') + ', ' + str('str07') + '\n'
+    target_file.write(header)
+    for i in range(int(rec_count)):
+        # 将字节流转换成Python数据格式
+        # I: unsigned int
+        # f: float
+        a = unpack('IIIIIfII', buf[begin:end])
+        line = str(a[0]) + ', ' + str(a[1] / 100.0) + ', ' + str(a[2] / 100.0) + ', ' \
+            + str(a[3] / 100.0) + ', ' + str(a[4] / 100.0) + ', ' + str(a[5] / 10.0) + ', ' \
+            + str(a[6]) + ', ' + str(a[7]) + ', ' + '\n'
+        target_file.write(line)
+        begin += 32
+        end += 32
+    target_file.close()
+ 
+source = 'C:/通达信测试版/vipdoc/sh/lday'
+target = 'D:/tdxday'
+file_list = os.listdir(source)
+for f in file_list:
+    day2csv(source, f, target)
 ```
 ## 查看文章更新
 [themes\iyelee\layout\_partial\post\copyright.ejs](https://github.com/cjql/blog/edit/master/themes/iyelee/layout/_partial/post/copyright.ejs)

@@ -9,7 +9,9 @@ Yelee: "3.5"
 menu:
   时间轴: /archives/
   标签云: /tags/
-  关于我: /hello
+  分类: /categories/
+  关于我: /hello/
+
   # 留言板: /about/
   # 建站日志: /2015/08/20/blog-building
 
@@ -109,8 +111,8 @@ background_image: 4
 inline_code: 1  # Value: 0 - 9 可选
 
 # Highlight theme for code block | 代码高亮配色主题
-code_block: 1  # Value: 0 - 27 可选
-
+code_block: 11 # Value: 0 - 27 可选
+#5、7、11，21、24、26
 # 自定义文章「引用部分」的样式
 blockquote_style: 0  # Value: 0 - 7 可选
 
