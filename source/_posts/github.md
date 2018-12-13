@@ -6,6 +6,7 @@ github学习笔记
 <!-- more -->
 # Errors
 ## Updating the Git index failed.
+再试试你这个罪魁祸首。
 ```
 git config --global core.autocrlf false
 ```
