@@ -4,6 +4,7 @@ tags: [python基础, wiki,fix]
 ---
 文件读写。
 <!-- more -->
+[官方文档](https://docs.python.org/3/tutorial/inputoutput.html)
 # f=open() and f.read()
 
 ```python

@@ -5,6 +5,11 @@ tags: [python,jupyter,学习笔记,后续学习]
 
 jupyter命令一览。
 <!-- more -->
+# 新习
+## 2018年12月13日
+### jupyter 输出去掉 `\n`
+要 `print` 才出效果
+https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook
 # 准备
 ## 官方网站
 [官方网站](http://jupyter.org/install) 

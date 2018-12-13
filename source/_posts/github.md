@@ -4,9 +4,11 @@ tags: [github, wiki]
 ---
 github学习笔记
 <!-- more -->
-# Errors
-## Updating the Git index failed.
-再试试你这个罪魁祸首。
+# 学习历程
+## Errors
+### Updating the Git index failed.
+参考：[stackoverflow](https://stackoverflow.com/questions/10573815/why-is-updating-the-git-index-failed-displayed)
+> 再试试你这个罪魁祸首。
 ```
 git config --global core.autocrlf false
 ```

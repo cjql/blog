@@ -6,10 +6,14 @@ tags: [python,mysql,学习笔记]
 开始学习python的mysql连接。
 <!-- more -->
 # 准备
->- [xampp](https://www.apachefriends.org/zh_cn/index.html)
+> - [xampp](https://www.apachefriends.org/zh_cn/index.html)
 - ```pip install pymysql --user```
 - /xampp/phpMyadmin，打开config.inc.php文件，查看MySQL配置的用户和密码
-参考教程：[菜鸟](http://www.runoob.com/python3/python3-mysql.html) [MySQL官方文档](https://dev.mysql.com/doc/refman/8.0/en/mysql-internals.html)
+
+参考教程：
+> - 菜鸟教程：[mysql](http://www.runoob.com/python3/python3-mysql.html) 、[mysql-connector](http://www.runoob.com/python3/python-mysql-connector.html)
+- [MySQL官方文档](https://dev.mysql.com/doc/refman/8.0/en/mysql-internals.html)
+
 # 
 # 错误处理
 
