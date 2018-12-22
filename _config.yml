@@ -70,7 +70,10 @@ theme: iyelee
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/cjql/cjql.github.io.git,master
+  repo: 
+    github: https://github.com/cjql/cjql.github.io.git,master
+    bitbucket: https://cj2019@bitbucket.org/cj2019/cj2019.bitbucket.org.git,master
+
 
 index_generator:
   per_page: 15
