@@ -73,6 +73,7 @@ deploy:
   repo: 
     github: https://github.com/cjql/cjql.github.io.git,master
     bitbucket: https://cj2019@bitbucket.org/cj2019/cj2019.bitbucket.org.git,master
+    coding: https://git.coding.net/nebulae/nebulae.git,master
 
 
 index_generator:

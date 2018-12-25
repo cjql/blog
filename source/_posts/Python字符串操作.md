@@ -240,3 +240,24 @@ string.atof(s[,base]) #转成float
 也有变通的办法的:
 可以用S=list(S)这个函数把S变为由单个字符为成员的list.
 这样的话就可以使用S[3]='a'的方式改变值，然后再使用S=" ".join(S)还原成字符串
+# 字符串格式化
+## %操作符
+更高级别的控制
+### 括号:元组
+### %S%d%4.2f:占位符（格式化符号）
+%s:字符串
+%d:整数
+%5d:前面添加空格，总长度为5
+%f:浮点数
+%4.2f:总长4，2个小数位的浮点数
+### %:格式化符号
+print("I'm %s. I'm %d year old" % ('Vamei', 99))
+## format
+默认：顺序传递
+标准格式：{位置:值}
+https://docs.python.org/3/library/string.html#format-string-syntax
+```py
+'{1} is better than {0}'.format('a','b')  
+#'b is better than a'
+'{:10.2f}'.format(1.23456) # 长度为10，保留两位小数，前面空格填补
+```
