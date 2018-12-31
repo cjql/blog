@@ -147,7 +147,96 @@ require([], function (){
 
     // TOC
     if (yiliaConfig.toc) {
-        require(['toc'], function(){ })
+        require(['toc'], function(w,d) {
+
+            var body = d.body,
+                ua = navigator.userAgent,
+                docEl = ua.indexOf('Firefox') !== -1 ? d.documentElement : body;
+                noop = function() {}
+
+            var Blog = {
+                fixedToc: (function() {
+                    var toc = d.getElementById('toc-article');
+        
+                    if (!toc || !toc.children.length) {
+                        return noop;
+                    }
+        
+                    var tocOfs = offset(toc),
+                        tocTop = tocOfs.y,
+                        headerH = header.clientHeight,
+                        titles = d.getElementById('article-entry').querySelectorAll('h1, h2, h3, h4, h5, h6');
+        
+                    toc.querySelector('a[href="#' + titles[0].id + '"]').parentNode.classList.add('active');  
+        
+                    [].forEach.call(toc.querySelectorAll('a[href*="#"]'), function(el){
+                        
+                        el.addEventListener('click', function(e){
+                            e.preventDefault();
+                            docEl.scrollTop = offset(d.querySelector('[id="'+ decodeURIComponent(this.hash).substr(1) +'"]')).y - headerH + 10;
+                        })
+                    });
+        
+                    function setActive(top) {
+        
+                        for (i = 0, len = titles.length; i < len; i++) {
+                            if (top > offset(titles[i]).y - headerH) {
+                                toc.querySelector('h.active').classList.remove('active');
+        
+                                var active = toc.querySelector('a[href="#' + titles[i].id + '"]').parentNode;
+                                active.classList.add('active');
+        
+                                if(active.offsetTop >= toc.clientHeight - headerH) {
+                                    toc.scrollTop = active.offsetTop - toc.clientHeight + parseInt(w.innerHeight/3);
+                                } else {
+                                    toc.scrollTop = 0;
+                                }
+                            } 
+                        }
+        
+                        if(top < offset(titles[0]).y) {
+                            toc.querySelector('h.active').classList.remove('active');
+                            toc.querySelector('a[href="#' + titles[0].id + '"]').parentNode.classList.add('active');  
+                        }
+                    }
+        
+                    return function(top) {
+                        if (top > tocTop - headerH) {
+                            toc.classList.add('fixed');
+                        } else {
+                            toc.classList.remove('fixed');
+                            
+                        }
+        
+                        setActive(top);
+        
+                    };
+                })(),
+                fixNavMinH: (function(){
+                    var nav = d.querySelector('.nav');
+        
+                    function calcH() {
+                        nav.style.minHeight =  (nav.parentNode.clientHeight - nav.nextElementSibling.offsetHeight) + 'px';
+                    }
+        
+                    return calcH;
+                })()
+            };
+        
+
+        
+            w.addEventListener('resize', function() {
+                Blog.fixNavMinH();
+            });
+        
+            d.addEventListener('scroll', function() {
+                var top = docEl.scrollTop;
+                Blog.fixedToc(top);
+            },true);
+        
+        })(window, document); 
+        // Make every child shrink initially
+    
     }
 
     // 随机颜色
