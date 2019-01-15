@@ -9,8 +9,8 @@ Yelee: "3.5"
 menu:
   时间轴: /archives/
   标签云: /tags/
-  分类: /categories/
-  关于我: /hello/
+  # 分类: /categories/
+  # 关于我: /hello/
 
   # 留言板: /about/
   # 建站日志: /2015/08/20/blog-building
@@ -35,11 +35,11 @@ root_url:
 subnav:
   # Email: "mailto:&#0000109;&#0000111;&#x0000031;&#0048;&#x0000030;&#0048;&#000053;&#000064;&#00000111;&#0117;&#00116;&#x000006c;&#0111;&#111;&#00107;&#x002e;&#x00063;&#00000111;&#00109;"
   # 新浪微博: //weibo.com/yemzh
-  GitHub: //github.com/cjql
+  GitHub: //github.com/
   # V2EX: //www.v2ex.com/member/
   # RSS: "/atom.xml"
   # 知乎: "zhihu"
-  豆瓣: "douban"
+  豆瓣: "https://book.douban.com/"
   # 简书: "jianshu"
   # SegmentFault: ""
   # 网易云音乐: "netease"
@@ -53,14 +53,14 @@ subnav:
   # PayPal: "#"
   StackOverflow: "https://stackoverflow.com/"
   # Instagram: "#"
-  Flickr: "#"
+  Flickr: "https://www.flickr.com/"
   # reddit: ""
   # Medium: ""
   # TiddlyWiki: "/wiki/"
   # Tumblr: ""
   # _500px: ""
-  博客园: "cnblogs"
-  CSDN: ""
+  博客园: "https://www.cnblogs.com/"
+  CSDN: "https://www.csdn.net/"
   # CodePen: ""
   # Plunker: ""
   # quora: "https://www.quora.com"
