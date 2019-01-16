@@ -1,6 +1,6 @@
 ---
 title: sort-array-by-parity-ii
-tags: [leetcode]
+tags: [leetcode,20190116]
 ---
 ## 简述
 给定非负整数数组，该数组中奇数的个数和偶数的个数相同。重新排列数组，使元素的奇偶性和元素的索引的奇偶性一致。
@@ -28,7 +28,7 @@ class Solution:
             else:
                 lst[oddIndex] = x
                 oddIndex += 2
-                
+
         return lst
 
 ```

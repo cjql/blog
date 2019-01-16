@@ -1,6 +1,6 @@
 ---
 title: number-of-recent-calls
-tags: [leetcode,collections,todo]
+tags: [leetcode,collections,todo,20190116]
 ---
 ## 简述
 求3000ms前到现在的ping数。

@@ -1,13 +1,12 @@
 ---
 title: n-ary-tree-preorder-traversal
-tags: [leetcode,N叉树,前序,遍历]
+tags: [leetcode,N叉树,前序,遍历,,20190116]
 ---
 ## 简述
 前序遍历 N 叉树
 n-ary-tree-preorder-traversal [英文](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) [中文](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)
 ## 收获
-1.list [官方文档](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) [菜鸟教程](http://www.runoob.com/python/python-lists.html)
-2.
+list [官方文档](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) [菜鸟教程](http://www.runoob.com/python/python-lists.html)
 <!-- more -->
 
 ## 代码

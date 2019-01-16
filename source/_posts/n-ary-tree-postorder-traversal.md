@@ -1,6 +1,6 @@
 ---
 title: n-ary-tree-postorder-traversal
-tags: [leetcode,N叉树,后序,遍历]
+tags: [leetcode,N叉树,后序,遍历,20190116]
 ---
 ## 简述
 后序遍历 N 叉树
