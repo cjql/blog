@@ -6,7 +6,7 @@ integer、indices、input、assume、类的方法传参、enumerate、random(5)
 <!-- more -->
 Given an array of `integers`, return `indices` of the two numbers such that they add up to a specific target.
 `You may assume that each input would have exactly one solution, and you may not use the same element twice.`
-# enumerate
+# 1. enumerate
 http://www.runoob.com/python/python-func-enumerate.html
 ```py
 seq = ['one', 'two', 'three']
@@ -20,8 +20,8 @@ print(type(seq_enumerated))
 for i, element in enumerate(seq):
     print(i,element)
 ```
-# 参考
-## O(n<sub>2</sub>)-1
+# 2. 参考
+## 2.1. O(n<sub>2</sub>)-1
 ```py
 class Solution(object):
     def twoSum(self, nums, target):
@@ -36,7 +36,7 @@ a=Solution()
 m=a.twoSum([2, 7, 11, 15],9)
 print(m)
 ```
-### 去掉class
+### 2.1.1. 去掉class
 ```py
 def twoSum(nums, target):
     d = {}
