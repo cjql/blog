@@ -1,9 +1,12 @@
 ---
 title: hello
 tags: [后续学习]
-date: 2018-12-25 01:23:47
+date: 2100-12-12 01:23:47
 ---
-记录本站主题的改动历史。学习和记录hexo的相关配置和操作。
+## 说明
+记录本站所采用的主题的改动历史。学习和记录hexo的相关配置和操作。
+## 小记
+主博客用的是Yelee主题，修改了UI，使其比较符合自己的口味。[子博客](https://cjql.github.io/en)用的是landscape主题，修改了bannar、浮悬导航及部分其他UI，增加了目录和到顶部按钮。抽离出自定义子博客模块。自此，每个新子博客用一条命令，三五个动作就可以部署成功了，扩展性大幅度增强。
 <!-- more -->
 # todo
 https://github.com/howiefh/hexo-theme-landscape-f/blob/master/layout/_partial/after-footer.ejs#L33
@@ -14,18 +17,35 @@ https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/style.s
 https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/_partial/bottom-btn.styl
 https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/_partial/toc.styl
 http://howiefh.github.io/archives/
-
 https://hexo.io/docs/asset-folders.html#Post-Asset-Folder
 https://zalando-incubator.github.io/hexo-theme-doc/
 https://chorer.github.io/ 暂时不用
 https://raytaylorlin.github.io/
 https://github.com/MOxFIVE/Markdown-Archives-Backup/blame/master/_posts/2015-08-20.blog-building.md
 https://zhuqingguang.github.io/2017/08/16/adapting-two-layout/
-## toc
+toc：
 https://orianna-zzo.github.io/sci-tech/2018-08/blog%E5%85%BB%E6%88%90%E8%AE%B013-%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AAtoc%E4%BE%A7%E8%BE%B9%E6%A0%8F/
 https://www.runoob.com/bootstrap/bootstrap-scrollspy-plugin.html
 https://unnamed42.github.io/2016-09-10-Hexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0.html
 # 历次修改
+## 20191227扩展自定义主题及子目录博客快速部署
+1. 打开git，在git中输入以下命令
+```bash
+hexo init eg&& cd eg &&(git clone https://github.com/cjql/hexosub;npm install hexo-deployer-git --save)
+```
+2. 将`hexosub文件夹里的_config.yml文件、themes文件夹、scaffolds文件夹`复制到`eg文件夹`并替换
+3. 删除hexosub文件夹
+4. 打开eg/_config.yml，在里面找到下面几行：
+```yml
+url: http://yoursite.com/eg
+root: /eg/
+
+deploy:
+  type: 'git'
+  repository: https://github.com/cjql/eg
+  branch: master
+```
+将eg替换为你的子目录对应的GitHub上的仓库的名称。
 ## 20191226全局添加到顶部按钮
 http://howiefh.github.io/2014/02/07/hexo-note/
 https://www.iconfont.cn/search/index?q=%E7%AE%AD%E5%A4%B4%20%E4%B8%8A
