@@ -1,17 +1,20 @@
 ---
 title: Windows环境下用Flask开发微信公众号
-tags: Flask
+tags: [Flask,微信]
 ---
-微信公众号是不错的图床。
+微信公众号是不错的图床。也可以做做微信机器人。无需穿透工具。
+目前此项目依托Flask，接入了文本复读机和给图片提供图床的功能。
+后面会加入批量图片OCR功能。
 <!-- more -->
 
 ## 事前准备
-一台服务器、一个已开通的公众号
-服务器python环境下的第三方库：Flask、xmltodict
+一台服务器、一个已开通的公众号。
+服务器Python环境下的第三方库：Flask、xmltodict。
 ## 配置
 - 配置服务器的安全组，打开80端口。
 - 关闭服务器防火墙。
 - 将下面的代码保存为wechat.py放在服务器上。
+
 ```py
 from flask import Flask, escape, url_for, request, make_response
 
@@ -89,9 +92,8 @@ if __name__ == '__main__':
 
 ```
 - 打开服务器的shell，路径移动到wechat.py所在的最小子文件夹，输入'python wechat.py'
-- 登录 https://mp.weixin.qq.com/
-- 点击左下角开发选项下的`基本配置`
-- 点击下图中的`查看`，将服务器IP加入其中
+- 登录 https://mp.weixin.qq.com/ 。点击左下角开发选项下的`基本配置` 。
+- 点击下图中的`查看`，将服务器IP加入其中 。
 ![](http://mmbiz.qpic.cn/mmbiz_jpg/RpaIDoV1UhZUlJHSk0thxgM2tLenia3M4QrotumGhTuvibFHfRoakGicEheXAia4r7AEcDH2rNXrBG1ib5YsfdZ0nMA/0)
 - 点服务器配置的`修改配置`，提交成功后点`启用`最终页面效果如下：
 ![](http://mmbiz.qpic.cn/mmbiz_jpg/RpaIDoV1UhZUlJHSk0thxgM2tLenia3M4uZDVKHm8icSchDwyguL5kT1mQ6fzpDxhGSzdQnwiaTXzI2ot9NnpZndQ/0)

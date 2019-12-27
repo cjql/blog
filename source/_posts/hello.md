@@ -1,10 +1,56 @@
 ---
 title: hello
 tags: [后续学习]
+date: 2018-12-25 01:23:47
 ---
-个人建站历程留影。
+记录本站主题的改动历史。学习和记录hexo的相关配置和操作。
 <!-- more -->
-# 迁移
+# todo
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/layout/_partial/after-footer.ejs#L33
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/layout/_partial/sidebar.ejs
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/layout/_partial/article.ejs
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/_variables.styl
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/style.styl
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/_partial/bottom-btn.styl
+https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/css/_partial/toc.styl
+http://howiefh.github.io/archives/
+
+https://hexo.io/docs/asset-folders.html#Post-Asset-Folder
+https://zalando-incubator.github.io/hexo-theme-doc/
+https://chorer.github.io/ 暂时不用
+https://raytaylorlin.github.io/
+https://github.com/MOxFIVE/Markdown-Archives-Backup/blame/master/_posts/2015-08-20.blog-building.md
+https://zhuqingguang.github.io/2017/08/16/adapting-two-layout/
+## toc
+https://orianna-zzo.github.io/sci-tech/2018-08/blog%E5%85%BB%E6%88%90%E8%AE%B013-%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AAtoc%E4%BE%A7%E8%BE%B9%E6%A0%8F/
+https://www.runoob.com/bootstrap/bootstrap-scrollspy-plugin.html
+https://unnamed42.github.io/2016-09-10-Hexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0.html
+# 历次修改
+## 20191226全局添加到顶部按钮
+http://howiefh.github.io/2014/02/07/hexo-note/
+https://www.iconfont.cn/search/index?q=%E7%AE%AD%E5%A4%B4%20%E4%B8%8A
+## 20191224在子目录里部署GitHub博客
+https://hexo.io/docs/github-pages#Project-page
+>Step1 在GitHub中准备仓库。
+1. Create a new repository `<reponame>`
+2. settings of reponame 
+3. GitHub Pages.Source.master branch
+
+>step2 获取博客环境文件夹
+* 方案一 直接复制已部署的博客文件夹，删除_post里面的所有文件。
+* 方案二 重头再来。在bash里依次输入下面几行命令：
+```bash
+hexo init my-blog
+cd my-blog
+npm install hexo-deployer-git --save
+```
+>step3 修改子目录配置
+![](https://upload-images.jianshu.io/upload_images/7691672-10c91cc7e9e1f42c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![](https://upload-images.jianshu.io/upload_images/7691672-6de8aa1b0c8c5989.png?imageMogr2/auto-orient/strip|imageView2/2/w/1044/format/webp)
+
+参考连接：
+1. https://www.jianshu.com/p/18356b0a7494
+## 20191016迁移
 1. 检查[安装](https://hexo.io/zh-cn/docs/)
 `
 git version
@@ -19,6 +65,7 @@ hexo -v
 5. 在io/source/_posts中新增文章
 6. `hexo g`
 7. `hexo d`
+8. `hexo s`
 # 参考资料
 
 主体|网址
@@ -64,6 +111,8 @@ top和按更新时间显示
 
 # 排错
 > - 检查_config.yml的空格
+## Template render error
+https://hexo.io/docs/troubleshooting#Escape-Contents
 
 # 设计相关书单
 ISBN|Date|pages|price|author|title

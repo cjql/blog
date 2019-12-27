@@ -1,6 +1,7 @@
 ---
 title: 小作品：快速生成LeetCode模板
 tags: [achieve,leetcode]
+date: 2019-12-20
 ---
 想提高刷题效率，重复工作留给计算机吧
 
