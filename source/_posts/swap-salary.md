@@ -1,7 +1,7 @@
 ---
 title: swap-salary
+date: 2098-01-01
 tags: [leetcode]
-date: 2020-01-07
 ---
 ## 简述
 数据库中属性（如男女）互换。

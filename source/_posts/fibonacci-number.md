@@ -1,7 +1,7 @@
 ---
 title: fibonacci-number
+date: 2098-01-01
 tags: [leetcode]
-date: 2020-01-07
 ---
 ## 简述
 求斐波那契的第 N+1 个值。

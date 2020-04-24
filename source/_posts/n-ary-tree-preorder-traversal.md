@@ -1,7 +1,7 @@
 ---
 title: n-ary-tree-preorder-traversal
+date: 2098-01-01
 tags: [leetcode,N叉树,前序,遍历]
-date: 2020-01-07
 ---
 ## 简述
 前序遍历 N 叉树

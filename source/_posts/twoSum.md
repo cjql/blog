@@ -1,7 +1,7 @@
 ---
 title: twoSum
+date: 2098-01-01
 tags: [leetcode]
-date: 2020-01-07
 ---
 integer、indices、input、assume、类的方法传参、enumerate、random(5)
 <!-- more -->

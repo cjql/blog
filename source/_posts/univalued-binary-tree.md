@@ -1,7 +1,7 @@
 ---
 title: univalued-binary-tree
+date: 2098-01-01
 tags: [leetcode,二叉树,递归]
-date: 2020-01-07
 ---
 判断二叉树是否是单值二叉树。
 univalued-binary-tree [英文](https://leetcode.com/problems/univalued-binary-tree/) [中文](https://leetcode-cn.com/problems/univalued-binary-tree/)

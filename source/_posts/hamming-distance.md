@@ -1,7 +1,7 @@
 ---
 title: hamming-distance
+date: 2098-01-01
 tags: [leetcode,进制]
-date: 2020-01-07
 ---
 汉明距离：两个整数转化为二进制后，求进制位上数字不同的个数。
 hamming-distance [英文](https://leetcode.com/problems/hamming-distance/) [中文](https://leetcode-cn.com/problems/hamming-distance/)
