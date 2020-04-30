@@ -21,6 +21,8 @@ tooltip:
   prePost: 上一篇
   miniArchives: 文章列表
   back2top: 返回顶部
+  go2page: 回到首页
+  go2home: 回总目录
   jump2comments: 查看评论
   go2bottom: 转到底部
   Hexo: "快速、简洁且高效的博客框架"
