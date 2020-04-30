@@ -1,7 +1,7 @@
 ---
 title: Docker
 date: 2031-12-23
-categories: [计算机,工具]
+categories: [计算机]
 ---
 Docker笔记。
 <!-- more -->
