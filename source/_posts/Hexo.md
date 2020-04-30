@@ -11,8 +11,7 @@ date: 2050-12-25
 文章宽度如何调宽：检查
 如何调整文章显示顺序：top和按更新时间显示
 如何加入分类
-## Hexo相关资源
-
+## 资源
 ``` bash
 $ hexo new "My New Post"
 $ hexo server
@@ -30,9 +29,24 @@ http://moxfive.xyz/ moxfive个人网站
 https://github.com/MOxFIVE  
 http://www.w3school.com.cn/cssref/css_colorsfull.asp 十六进制值排序颜色
 https://www.sioe.cn/yingyong/yanse-rgb-16/ 在线颜色转换
+## 迁移
+1. 检查[安装](https://hexo.io/zh-cn/docs/)
+2. `hexo init`
+3. 将 https://github.com/cjql/blog 克隆并复制覆盖到仓库目录
+4. `npm install hexo-deployer-git --save`
+5. `npm install --save hexo-generator-search`
+6. 在/source/_posts中新增文章
+7. `hexo g`
+8. `hexo d`
+9. `hexo s`
+10. 
 ## 排错
-> - 检查_config.yml的空格
-Template render error： https://hexo.io/docs/troubleshooting#Escape-Contents
+```
+检查_config.yml的空格
+Template render error
+```
+https://hexo.io/docs/troubleshooting#Escape-Contents
+
 ## 历次修改
 ### 扩展自定义主题及子目录博客快速部署
 1. 打开git，在git中输入以下命令
@@ -72,22 +86,6 @@ npm install hexo-deployer-git --save
 ```
 
 参考连接： https://www.jianshu.com/p/18356b0a7494
-### 迁移
-1. 检查[安装](https://hexo.io/zh-cn/docs/)
-`
-git version
-node -v
-hexo -v
-`
-若是hexo未安装：建io文件夹，进入io并在其下gitbash'npm install -g hexo-cli'。【io是要部署blog的文件夹，自己随意命名即可，保持一致就好】
-1. `hexo init`
-2. 将 https://github.com/cjql/blog 克隆并复制覆盖到io文件夹
-3. `npm install hexo-deployer-git --save`
-4. `npm install --save hexo-generator-search`
-5. 在/source/_posts中新增文章
-6. `hexo g`
-7. `hexo d`
-8. `hexo s`
 
 ## 更新日志
 ### 查看文章更新
