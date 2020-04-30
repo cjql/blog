@@ -2,7 +2,6 @@
 title: search-in-a-binary-search-tree
 date: 1998-01-01
 tags: [leetcode,二叉树,搜索]
-categories: [leetcode,二叉树,搜索]
 ---
 ## 简述
 在BST中找到节点值等于给定值的节点。

@@ -1,7 +1,6 @@
 ---
 title: NLTK
 date: 2035-12-31 01:23:47
-categories: [计算机,机器学习]
 ---
 《NLTK基础教程——用NLTK和Python库构建机器学习应用》笔记。
 <!-- more -->

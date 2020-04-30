@@ -1,7 +1,6 @@
 ---
 title: SQL
 date: 2040-12-26
-categories: [计算机,工具]
 ---
 SQL知识概览。
 <!-- more -->

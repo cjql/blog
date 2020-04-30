@@ -1,7 +1,6 @@
 ---
 title: Hexo
 date: 2050-12-25
-categories: [计算机,Web,Hexo]
 ---
 ## 0.1. 说明
 记录本站所采用的主题的改动历史。学习和记录hexo的相关配置和操作。

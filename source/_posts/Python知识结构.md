@@ -1,7 +1,6 @@
 ---
 title: Python知识结构
 date: 2040-12-12 01:23:47
-categories: [计算机,基础,Python]
 ---
 Python知识大全。
 https://github.com/daacheng/PythonBasic 平时工作中常用的Python零碎知识总结，爬虫学习总结与练习，Python数据分析学习总结

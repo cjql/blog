@@ -1,7 +1,6 @@
 ---
 title: Jupyter
 date: 2032-12-24
-categories: [计算机,工具]
 ---
 
 jupyter命令一览。
