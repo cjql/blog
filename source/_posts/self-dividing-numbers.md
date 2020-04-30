@@ -1,7 +1,6 @@
 ---
 title: self-dividing-numbers
 date: 1998-01-01
-tags: [leetcode]
 ---
 ## 简述
 求两个整数之间能被自身所有十进制位上的数字整除的数。

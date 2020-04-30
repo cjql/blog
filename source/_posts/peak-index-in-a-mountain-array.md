@@ -1,7 +1,6 @@
 ---
 title: peak-index-in-a-mountain-array
 date: 1998-01-01
-tags: [leetcode]
 ---
 简述：求山形数组中峰值的下标。
 peak-index-in-a-mountain-array [英文](https://leetcode.com/problems/peak-index-in-a-mountain-array/) [中文](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)

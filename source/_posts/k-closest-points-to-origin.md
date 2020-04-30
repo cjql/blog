@@ -1,7 +1,6 @@
 ---
 title: k-closest-points-to-origin
 date: 1998-01-01
-tags: [leetcode,排序]
 ---
 ## 简述
 一系列二维坐标值放入列表中，求出K个离原点最近的坐标值。

@@ -1,7 +1,6 @@
 ---
 title: di-string-match
 date: 1998-01-01
-tags: [leetcode]
 ---
 ## 简述
 用只含字母 I 和 D 的字符串生成列表，使 I 对应的列表元素值升序排列， D对应的列表元素值降序排列
