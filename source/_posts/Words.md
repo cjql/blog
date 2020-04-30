@@ -2,6 +2,7 @@
 title: Words
 date: 9999-12-25
 ---
+分治加记忆是最好的动态规划。
 ## voke
 convoke
 evoke
