@@ -1,6 +1,7 @@
 ---
 title: array-partition-i
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 把 2n 个整数平分成 n 份，求每份中最小数之和的最大数。

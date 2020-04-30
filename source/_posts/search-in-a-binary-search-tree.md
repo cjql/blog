@@ -1,6 +1,7 @@
 ---
 title: search-in-a-binary-search-tree
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 在BST中找到节点值等于给定值的节点。

@@ -1,19 +1,16 @@
 ---
 title: Jupyter
 date: 2032-12-24
+tags: [计算机,软件开发,工具]
 ---
 
 jupyter命令一览。
 <!-- more -->
-# 新习
-## 2018年12月13日
-### jupyter 输出去掉 `\n`
-要 `print` 才出效果
-https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook
-# 准备
-## 官方网站
-[官方网站](http://jupyter.org/install) 
-## 安装
+
+输出去掉 `\n`：https://stackoverflow.com/questions/43835171/print-multiple-line-string-in-jupyter-notebook
+
+http://jupyter.org/
+
 `pip install jupyter --user` 安装
 `jupyter notebook` 进入笔记本
 ## 修改默认路径和浏览器

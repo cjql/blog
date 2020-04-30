@@ -1,6 +1,7 @@
 ---
 title: Docker
 date: 2031-12-23
+tags: [计算机,软件开发,工具]
 ---
 Docker笔记。
 <!-- more -->
@@ -17,29 +18,29 @@ Registry@Registry是Docker公司为了更方便镜像流通而设计的一种镜
 hierarchy@Stack：define the interactions of all the services<br>Services:define how containers behave in production<br>Container (you are here)
 数据卷@数据卷是挂载到容器的一个目录，它与容器的生命周期独立，不会因为容器的销毁而消失。
 
-# cheatsheet
+# 1. cheatsheet
 命令分类：管理、镜像、容器、仓库、网络、数据卷、编排。  
 分类在每次版本发布时都有调整。
 https://docs.docker.com/engine/reference/commandline/docker/
 https://docs.docker.com/engine/reference/commandline/build/
 `docker、-v、info、--help、image/container ls (--all/-aq)、run hello-world、logs \<names>`
-## List Docker CLI commands  
+## 1.1. List Docker CLI commands  
 docker  
 docker container --help  
 
-## Display Docker version and info  
+## 1.2. Display Docker version and info  
 docker --version  
 docker version  
 docker info  Docker的各项运行状态信息（容器数量、状态，镜像数量，服务版本，存储驱动、根目录，数据卷，插件，网络，安全，硬件等信息）。
 $ docker inspect 检查容器或者镜像详细信息。输出的内容却相当丰富。
 
-## Execute Docker image  
+## 1.3. Execute Docker image  
 docker run hello-world  
 
-## List Docker images  
+## 1.4. List Docker images  
 docker image ls  
 
-## List Docker containers (running, all, all in quiet mode)  
+## 1.5. List Docker containers (running, all, all in quiet mode)  
 docker container ls  
 docker container ls --all  
 docker container ls -aq  
@@ -98,53 +99,53 @@ kill给容器的进程发送SIGKILL信号，该信号将会使容器必然退出
 镜像构建build
 镜像标签tags
 集群管理swarm
-# 简介
+# 2. 简介
 Linux、Windows和Mac OS平台上的Docker操作基本一致。
 Docker作为一个2013年才诞生的开源项目。
-# 背景介绍
+# 3. 背景介绍
 容器技术早在Docker之前就有。
 Docker清晰、易用、用户体验友好。发展迅速、火爆。在容器技术领域有领先地位。国内外有很多创业公司以Docker技术起家，Docker在中国的推广基本上靠国内几家与Docker相关的初创公司。开发者、企业、云计算厂商陆续在用。
 伴随而来的是各种复杂的需求与Docker尚不算完善的功能所产生的矛盾，这些问题制约着企业容器化的脚步。
-# 企业级容器云的实战经验
-# 为什么学习Docker
+# 4. 企业级容器云的实战经验
+# 5. 为什么学习Docker
 简化"换电脑换服务器"等迁移工作的环境配置问题。避免这个程序只有在我的机器上才可以运行的问题。
-# 相关术语 
-## 虚拟化技术
+# 6. 相关术语 
+## 6.1. 虚拟化技术
 通过各种虚拟化技术来实现软件的**迁移和分发**，解决了迁移过程中的诸多难题。
 **最常见的就是虚拟机或KVM技术**。在虚拟机里完成**开发再迁移到线上**不会出现环境问题。
 性能低下、分发流程麻烦、耗时和成本昂贵等问题。在云计算时代这些问题更加突出。传统的软件开发和运维的烦琐流程感到吃力。
 **虚拟化技术**开始普及。
-## 容器技术
+## 6.2. 容器技术
 低成本、启动快、体积小和分发迅速
-### 第一代运维
+### 6.2.1. 第一代运维
 通过Shell脚本的方式使用SSH连接到所有服务器然后执行相同的指令，并把日志保存起来归档。维护服务器是一项繁重的工作，工程师不得不把大量的时间耗费在**服务器管理**上。
-### 第二代运维
+### 6.2.2. 第二代运维
 虚拟化技术的普及、云计算的出现、企业需要管理的服务器数量大幅增长。数据中心由企业内部发展到全球。运维成本愈发昂贵。
 **运维工具**（如**Ansible、Puppet、SaltStack和Chef**）改变云计算时代服务器运维方式。可以通过这些工具快速地完成对上百台甚至上千台服务器的管理操作。它极大地解决了管理庞大服务器集群的难题，使人们可以在屏幕面前通过一个界面管理所有服务器。但本质上这些工具都是通过SSH或者类似于SSH的方式连接到服务器来管理**服务器集群**。第二代运维和第一代运维并没有发生根本性的改变。
-### 第三代运维（容器时代）
+### 6.2.3. 第三代运维（容器时代）
 前两代运维速度是硬伤。SSH连接来交换信息十分耗时，其他复杂的管理操作更耗时。
 而随着容器技术的爆发，**以Docker为代表的容器技术**开始发力，并随着DevOps概念的普及，使运维发生了根本性的改变。
 **容器集群管理**不再是通过低效的SSH来连接服务器，甚至不需要登录服务器就可以完成对服务器的管理。
 通过容器管理集群可以抛弃传统的“SSH+秘钥”的连接方式来连接服务器，这对大规模集群来说是一个极大的变革。
 而且在速度上，容器技术在上百台服务器上启动应用只需要一眨眼的时间，这使得运维的工作大大减轻。
 运维和开发在容器时代逐步“融为一体”，形成一个流水线车间的工作环境。这对于软件行业来说无疑是一次巨大的变革。
-# 镜像的构建、容器的运行监控、网络的管理、仓库的应用、集群的部署
-# Docker的基本使用方法与实现原理（内部原理）
-# 从不同的角度分析问题并提出对应的解决办法
-# 实战技巧拓展
-# 根据不同类型的开发环境构建基础开发环境镜像
-# 直接使用Docker进入测试开发
-# 根据不同类型的应用部署
-# Docker分别在Linux、Windows和Mac OS系统下的安装方法，以及二进制安装方法。
-# Docker基础知识
-## Docker的基本操作
+# 7. 镜像的构建、容器的运行监控、网络的管理、仓库的应用、集群的部署
+# 8. Docker的基本使用方法与实现原理（内部原理）
+# 9. 从不同的角度分析问题并提出对应的解决办法
+# 10. 实战技巧拓展
+# 11. 根据不同类型的开发环境构建基础开发环境镜像
+# 12. 直接使用Docker进入测试开发
+# 13. 根据不同类型的应用部署
+# 14. Docker分别在Linux、Windows和Mac OS系统下的安装方法，以及二进制安装方法。
+# 15. Docker基础知识
+## 15.1. Docker的基本操作
 Docker基础、Docker镜像、Docker file文件、Docker仓库、Docker容器、数据卷的使用方法与原理及网络管理
-## 简单应用，等内容。通过对本篇内容的学习，读者可以掌握最常用的Docker知识。
-# Docker进阶实战（在实际开发中的应用实例）
+## 15.2. 简单应用，等内容。通过对本篇内容的学习，读者可以掌握最常用的Docker知识。
+# 16. Docker进阶实战（在实际开发中的应用实例）
 操作系统、编排工具Compose、Web服务器与应用、数据库、编程语言、Docker API、私有仓库、集群网络、Docker安全
 Docker在容器云环境中的应用
 在实际生产环境中应用Docker
-# 容器技术大观
+# 17. 容器技术大观
 容器，用来放东西的道具。容器技术借鉴了工业运输的发展经验。低成本，标准化。
 虚拟化技术分类：
 - 基于**硬件**虚拟化，基于**软件**虚拟化。
@@ -223,7 +224,7 @@ clone()可以用来创建新的namespace。clone()有一个flags参数，该参�
 上面介绍的是一些概念，下面来实践一下。因为user namespace是在Linux内核3.8之后才支持的，所以本节讨论的namespace均是3.8以后的版本。
 
 在了解namespace API之前，先来了解如何查看进程的namespace。在root用户模式下执行：
-# ls -l /proc/$$/ns
+# 18. ls -l /proc/$$/ns
 total 0
 lrwxrwxrwx 1 root root 0 6月 10 20:29 ipc -> ipc:[4026531839]
 lrwxrwxrwx 1 root root 0 6月 10 20:29 mnt -> mnt:[4026531840]
@@ -273,10 +274,10 @@ Croups各个子系统作用如下。
 ·Huge_tlb：限制HugeTLB的使用。
 ·Perf_event：允许Perf工具基于Cgroups分组做性能监测。
 这样说理解起来也很吃力，下面就通过命令来挂载Cgroupfs。
-# mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset
+# 19. mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset
 这个动作一般情况下已经在Linux启动的时候做了。
 查看Cgroupfs：
-# cpuset ls
+# 20. cpuset ls
 cgroup.clone_children cpuset.memory_pressure_enabled
 
 cgroup.procs cpuset.memory_spread_page
@@ -311,24 +312,24 @@ cpu.shares = 1000;
 }
 }
 然后通过命令行把一个进程移动到这个Cgroups之中。
-# mount -t group -o cpu cpu /sys/fs/cgroup/cpuset
-# cgcreate -g cpu,momory:/cnsworder
-# chown root:root /sys/fs/cgroup/cpuset/cnsworder/test/*
-# chown root:root /sys/fs/cgroup/cpuset/cnsworder/test/task
-# cgrun -g cpu,momory:/cnsworder/test bash
+# 21. mount -t group -o cpu cpu /sys/fs/cgroup/cpuset
+# 22. cgcreate -g cpu,momory:/cnsworder
+# 23. chown root:root /sys/fs/cgroup/cpuset/cnsworder/test/*
+# 24. chown root:root /sys/fs/cgroup/cpuset/cnsworder/test/task
+# 25. cgrun -g cpu,momory:/cnsworder/test bash
 
 容器的创建
 前面只是非常简单地介绍了namespace和Cgroups两个概念。实际上各个namespace的具体介绍与各个Cgroups子系统的介绍都没有深入讲解到，但通过前面两节的学习，相信读者已经大致有了容器创建过程的雏形。
 （1）系统调用clone()创建新进程，拥有自己的namespace。
 该进程拥有自己的pid、mount、user、net、ipc和uts namespace。
-# pid =clone(fun,stack,flags,clone_arg);
+# 26. pid =clone(fun,stack,flags,clone_arg);
 （2）将pid写入Cgroup子系统这样就受到Cgroups子系统控制。
-# echo$pid >/sys/fs/cgroup/cpu/tasks
-# echo$pid >/sys/fs/cgroup/cpuset/tasks
-# echo$pid >/sys/fs/cgroup/bikio/tasks
-# echo$pid >/sys/fs/cgroup/memory/tasks
-# echo$pid >/sys/fs/cgroup/devices/tasks
-# echo$pid >/sys/fs/cgroup/feezer/tasks
+# 27. echo$pid >/sys/fs/cgroup/cpu/tasks
+# 28. echo$pid >/sys/fs/cgroup/cpuset/tasks
+# 29. echo$pid >/sys/fs/cgroup/bikio/tasks
+# 30. echo$pid >/sys/fs/cgroup/memory/tasks
+# 31. echo$pid >/sys/fs/cgroup/devices/tasks
+# 32. echo$pid >/sys/fs/cgroup/feezer/tasks
 （3）通过pivot_root系统调用，使进程进入一个新的rootfs，之后通过exec()系统调用，在新的namespace、Cgroups、rootfs中执行/bin/bash。
 fun(){
 pivot_root("path_of_rootfs/"，path)；
@@ -339,25 +340,25 @@ exec("/bin/bash");
 每一项技术成熟后都会衍生出一系列技术，例如当Docker推开容器世界的大门时，围绕容器技术的生态系统迅速发展起来。
 无论是**个人**还是**企业**，在使用上都有各种各样的需求，例如**跨主机连接**容器，各种类型的**负载均衡**，**持续构建、集成和交付**，以及**大规模容器管理**等。
 虽然Docker提供了较为便捷的操作方式，
-##  Docker的不足
+## 32.1. Docker的不足
 在**开发、生产环境**中，**网络、存储、集群和高可用**等问题层出不穷。仅凭Docker难以面面俱到。
-## Docker的发展方向
+## 32.2. Docker的发展方向
 从容器到容器云。围绕Docker容器云还有很多需要开发者去完善的地方。
-## Docker生态区
-# 展望
+## 32.3. Docker生态区
+# 33. 展望
 国内现在以Docker容器云为“卖点”的初创公司不在百家之下，国外更是不用言说。
 可见如图1.8展示了目前Docker的生态圈的一部分。
 可以看到这些工具围绕Docker进行扩展补充，已经形成了非常发达的生态系统网络。
 图1.8 容器技术生态圈
-# 概念
-## 容器云
+# 34. 概念
+## 34.1. 容器云
 容器云是以容器为资源分割和调度的基本单位，通过容器封装软件运行环境，为用户提供一个集构建、发布和运行于一体的分布式应用平台。
-## 微服务
+## 34.2. 微服务
 微服Microservices在软件架构上可以将容器用于部署。微服务只是一个相比标准的Web服务超快的**轻量级Web服务**。这是通过将功能单元（也许是一个单一服务或API方法）打包到一个服务中，并内嵌其到一个轻量级Web服务器软件中实现的。
-## 容器云与IaaS、PaaS
+## 34.3. 容器云与IaaS、PaaS
 容器云可以共享与隔离资源、编排与部署容器。在这一点上容器云与IaaS相似。
 但是容器云也可以渗透到应用支撑与运行时环境，在这一点上与PaaS类似。
-## Docker与其他容器技术
+## 34.4. Docker与其他容器技术
 容器技术
 基础：Docker、CoreOS的Rocket项目等等。
 发展：容器云。
@@ -367,16 +368,16 @@ exec("/bin/bash");
 容器调用方法
 容器技术的历史
 Docker Swarm集群管理方式
-# 容器技术与Docker（Docker在容器技术中的位置）
+# 35. 容器技术与Docker（Docker在容器技术中的位置）
 容器成就了Docker，而Docker也极大地促进了容器技术的发展。
 关于容器是否是Docker的核心技术在业内一直存在争议。Docker的核心是对分层镜像的创新使用，还是统一了应用的打包分发和部署方式。
 因为Docker的创新不一定要依赖容器技术，像基于传统的hypervisor也可以做到。
 官方对Docker核心技术功能的描述“Build，Ship and Run”中也确实没有体现与容器相关的内容。
 实际上，从Docker公司的表现来看，它不会单纯地只是做一个CaaS（容器即服务）服务商。
-# 参考
+# 36. 参考
 《Docker从入门到实战》，黄婧钧，2017
 
-# Docker资源
+# 37. Docker资源
 Docker官方英文资源：
 
 docker官网：http://www.docker.com

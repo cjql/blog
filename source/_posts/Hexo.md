@@ -1,6 +1,7 @@
 ---
 title: Hexo
 date: 2050-12-25
+tags: [计算机,计算机网络]
 ---
 记录本站所采用的主题的改动历史。学习和记录hexo的相关配置和操作。
 主博客用的是Yelee主题，修改了UI，使其比较符合自己的口味。[子博客](https://cjql.github.io/en)用的是landscape主题，修改了bannar、浮悬导航及部分其他UI，增加了目录和到顶部按钮。抽离出自定义子博客模块。自此，每个新子博客用一条命令，三五个动作就可以部署成功了，扩展性大幅度增强。
@@ -46,6 +47,8 @@ https://www.sioe.cn/yingyong/yanse-rgb-16/ 在线颜色转换
 Template render error
 ```
 https://hexo.io/docs/troubleshooting#Escape-Contents
+https://github.com/hexojs/hexo/issues/2384
+https://hexo.io/docs/troubleshooting#Template-render-error
 
 ## 历次修改
 ### 扩展自定义主题及子目录博客快速部署

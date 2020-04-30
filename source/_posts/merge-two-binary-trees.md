@@ -1,6 +1,7 @@
 ---
 title: merge-two-binary-trees
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 合并2个二叉树。

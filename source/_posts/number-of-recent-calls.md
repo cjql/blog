@@ -1,6 +1,7 @@
 ---
 title: number-of-recent-calls
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 求3000ms前到现在的ping数。

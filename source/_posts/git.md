@@ -1,6 +1,7 @@
 ---
 title: git
 date: 2031-12-26
+tags: [计算机,软件开发,工具]
 ---
 沙盒：https://learngitbranching.js.org/?NODEMO
 - undo、reset 修正错误，不记入步数。

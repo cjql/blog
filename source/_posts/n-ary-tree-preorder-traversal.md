@@ -1,6 +1,7 @@
 ---
 title: n-ary-tree-preorder-traversal
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 前序遍历 N 叉树

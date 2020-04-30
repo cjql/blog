@@ -1,6 +1,7 @@
 ---
 title: twoSum
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 integer、indices、input、assume、类的方法传参、enumerate、random(5)
 <!-- more -->

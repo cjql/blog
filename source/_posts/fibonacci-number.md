@@ -1,6 +1,7 @@
 ---
 title: fibonacci-number
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 求斐波那契的第 N+1 个值。

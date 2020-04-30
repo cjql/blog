@@ -1,6 +1,7 @@
 ---
 title: swap-salary
-date: 1998-01-01
+date: 8100-01-01
+tags: [计算机,算法,LeetCode]
 ---
 ## 简述
 数据库中属性（如男女）互换。
