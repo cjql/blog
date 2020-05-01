@@ -5,6 +5,76 @@ tags: [记忆]
 ---
 分治加记忆是最好的动态规划。
 <!-- more -->
+## salv
+el salvador
+el salvadoran colon
+el salvadoran monetary unit
+family salvadoraceae
+family salviniaceae
+genus salvadora
+genus salvelinus
+genus salvia
+genus salvinia
+mentholated salve
+republic of el salvador
+salvador
+salvador dali
+salvadora
+salvadora family
+salvadora persica
+salvadoraceae
+salvadoran
+salvadoran capital
+salvadorean
+salvadorian
+salvage
+salvageable
+salvager
+salvation
+salvation army
+salve
+salvelinus
+salvelinus alpinus
+salvelinus fontinalis
+salvelinus namaycush
+salver
+salverform
+salvia
+salvia azurea
+salvia clarea
+salvia divinorum
+salvia farinacea
+salvia lancifolia
+salvia leucophylla
+salvia lyrata
+salvia officinalis
+salvia pratensis
+salvia reflexa
+salvia sclarea
+salvia spathacea
+salvia verbenaca
+salvific
+salving
+salvinia
+salvinia auriculata
+salvinia rotundifolia
+salviniaceae
+salvinorin
+salvo
+salvor
+san salvador
+## euver
+airplane maneuver
+flight maneuver
+heimlich maneuver
+heimlich manoeuvere
+maneuver
+maneuverability
+maneuverable
+maneuverer
+manoeuver
+outmaneuver
+tactical maneuver
 ## voke
 convoke
 evoke
