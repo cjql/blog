@@ -5,28 +5,28 @@ tags: [记忆]
 ---
 分治加记忆是最好的动态规划。  
 <!-- more -->  
-# 1. semantics
+# semantics
 ## redundant
 The adj redundant has 2 senses (first 1 from tagged texts)
                                        
 1. (2) excess, extra, redundant, spare, supererogatory, superfluous, supernumerary, surplus -- (more than is needed, desired, or required; "trying to lose excess weight"; "found some extra change lying on the dresser"; "yet another book on heraldry might be thought redundant"; "skills made redundant by technological advance"; "sleeping in the spare room"; "supernumerary ornamentation"; "it was supererogatory of her to gloat"; "delete superfluous (or unnecessary) words"; "extra ribs as well as other supernumerary internal parts"; "surplus cheese distributed to the needy")
 INDIRECT (VIA unnecessary) -> necessary -- (absolutely essential)
 RELATED TO->(noun) redundance#1
-   => redundancy, redundance -- (the attribute of being superfluous and unneeded; "the use of industrial robots created redundancy among workers")
+- redundancy, redundance -- (the attribute of being superfluous and unneeded; "the use of industrial robots created redundancy among workers")
 RELATED TO->(noun) redundancy#1
-   => redundancy -- (repetition of messages to reduce the probability of errors in transmission)
+- redundancy -- (repetition of messages to reduce the probability of errors in transmission)
 RELATED TO->(noun) redundancy#3
-   => redundancy -- ((electronics) a system design that duplicates components to provide alternatives in case one component fails)
+- redundancy -- ((electronics) a system design that duplicates components to provide alternatives in case one component fails)
 RELATED TO->(noun) redundancy#2
-   => redundancy, redundance -- (the attribute of being superfluous and unneeded; "the use of industrial robots created redundancy among workers")
+- redundancy, redundance -- (the attribute of being superfluous and unneeded; "the use of industrial robots created redundancy among workers")
 RELATED TO->(noun) redundancy#4
-   => redundancy -- (repetition of an act needlessly)
+- redundancy -- (repetition of an act needlessly)
 2. pleonastic, redundant, tautologic, tautological -- (repetition of same sense in different words; "`a true fact' and `a free gift' are pleonastic expressions"; "the phrase `a beginner who has just started' is tautological"; "at the risk of being redundant I return to my original proposition"- J.B.Conant)
 INDIRECT (VIA prolix) -> concise -- (expressing much in few words; "a concise explanation")
 RELATED TO->(noun) redundancy#2
-   => redundancy, redundance -- (the attribute of being superfluous and unneeded; "the use of industrial robots created redundancy among workers")
+- redundancy, redundance -- (the attribute of being superfluous and unneeded; "the use of industrial robots created redundancy among workers")
 RELATED TO->(noun) redundancy#4
-   => redundancy -- (repetition of an act needlessly)
+- redundancy -- (repetition of an act needlessly)
 ## anarchist 
 1 sense of anarchist                                                    
 Sense 1
@@ -578,7 +578,7 @@ epilogue, epilog -- (a short passage added at the end of a literary work; "the e
     - peroration -- ((rhetoric) the concluding section of an oration; "he summarized his main points in his peroration")
     - finale, coda -- (the closing section of a musical composition)
 
-## 1.1. iridescent
+## iridescent
 2 senses of iridescent                                                  
 
 Sense 1
@@ -595,7 +595,7 @@ iridescent, nacreous, opalescent, opaline, pearlescent -- (having a play of lust
        RELATED TO->(verb) iridesce#1
         - iridesce -- (be iridescent; "The corals iridesced under the surface of the clear water")
         INDIRECT (VIA bright) -> dull -- (emitting or reflecting very little light; "a dull glow"; "dull silver badly in need of a polish"; "a dull sky")
-## 1.2. surfeit
+## surfeit
 3 senses of surfeit                                                     
 
 Sense 1
@@ -744,7 +744,7 @@ surfeit -- (indulge (one's appetite) to satiety)
 
 
 
-## 1.3. glutton  
+## glutton  
 2 senses of glutton                                                     
 
 Sense 1  
@@ -780,7 +780,7 @@ glutton, Gulo gulo, wolverine -- (musteline mammal of northern Eurasia)
     - grison, Grison vittatus, Galictis vittatus -- (carnivore of Central America and South America resembling a weasel with a greyish-white back and dark underparts)  
     - marten, marten cat -- (agile slender-bodied arboreal mustelids somewhat larger than weasels)  
     - tayra, taira, Eira barbara -- (long-tailed arboreal mustelid of Central America and South America)  
-## 1.4. abjure  
+## abjure  
 
 1 sense of abjure                                                       
 
@@ -794,7 +794,7 @@ abjure, recant, forswear, retract, resile -- (formally reject or disavow a forme
     - deny -- (refuse to accept or believe; "He denied his fatal illness")  
 
 
-## 1.5. corroborate  
+## corroborate  
 
 2 of 3 senses of corroborate                                            
 
@@ -829,7 +829,7 @@ corroborate, underpin, bear out, support -- (support with evidence or authority 
     - adhere -- (be compatible or in accordance with; "You must adhere to the rules")  
     - rhyme, rime -- (be similar in sound, especially with respect to the last syllable; "hat and cat rhyme")  
 
-## 1.6. niblle  
+## niblle  
 
 2 senses of nibble                                                      
 
@@ -856,7 +856,7 @@ nibble -- (gentle biting)
     - nibble -- (gentle biting)  
     - nip, pinch -- (a small sharp bite or snip)  
 
-## 1.7. inception  
+## inception  
 
 1 sense of inception                                                    
 
@@ -872,8 +872,8 @@ origin, origination, inception -- (an event that is a beginning; a first part or
     - start -- (the beginning of anything; "it was off to a good start")  
     - creation, conception -- (the event that occurred at the beginning of something; "from its creation the plan was doomed to failure")  
 
-# 2. morphs
-## 2.1. accele  
+# morphs
+## accele  
 accelerando  
 accelerate  
 accelerated  
@@ -898,7 +898,7 @@ particle accelerator
 proaccelerin  
 prothrombin accelerator  
 proton accelerator  
-## 2.2. commit  
+## commit  
 blue ribbon committee  
 citizens committee  
 commit  
@@ -931,7 +931,7 @@ uncommitted
 vigilance committee  
 ways and means committee  
 welcoming committee  
-## 2.3. salv  
+## salv  
 el salvador  
 el salvadoran colon  
 el salvadoran monetary unit  
@@ -989,7 +989,7 @@ salvinorin
 salvo  
 salvor  
 san salvador  
-## 2.4. euver  
+## euver  
 airplane maneuver  
 flight maneuver  
 heimlich maneuver  
@@ -1001,7 +1001,7 @@ maneuverer
 manoeuver  
 outmaneuver  
 tactical maneuver  
-## 2.5. voke  
+## voke  
 convoke  
 evoke  
 evoked  
@@ -1012,7 +1012,7 @@ provoked
 provoker  
 revoke  
 unprovoked  
-## 2.6. apoc  
+## apoc  
 apocalypse  
 apocalyptic  
 apocalyptical  
